@@ -93,3 +93,22 @@ input[type="checkbox"]:checked + span::after {
   color: orange;
   margin-left: 5px;
 }
+
+details {
+  border: soild 1px #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+summary {
+  background-color: #efefef;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #262626;
+}
+
+details h3 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
