@@ -7,7 +7,6 @@
 body {
   background-color: black;
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
@@ -21,7 +20,7 @@ main {
 header > h1,
 footer > h2 {
   text-align: center;
-  padding: 8px;
+  padding: 15px;
 }
 
 article {
@@ -63,7 +62,6 @@ ul {
 
 ul li {
   padding: 6px 8px;
-  text-transform: uppercase;
 }
 /* using this tag we don't need to add class for each elements */
 .todo_list li:nth-child(odd) {
@@ -78,19 +76,18 @@ ul li {
   background-color: rgba(0, 255, 0, 0.2);
 }
 
-.check {
-  text-align: center;
-}
-
 .decorated-heading::after {
   content: "\2600";
   color: yellow;
   margin-left: 5px;
 }
 
+.check {
+  display: inline;
+}
+
 input[type="checkbox"]:checked + span::after {
-  content: "\2600";
-  color: orange;
+  content: "🎉";
   margin-left: 5px;
 }
 
