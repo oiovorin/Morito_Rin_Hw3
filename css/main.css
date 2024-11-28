@@ -8,6 +8,9 @@ body {
   background-color: #305647;
   font-size: 18px;
   color: white;
+  font-family: "Rasa", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #christmas h1 {
@@ -97,6 +100,10 @@ input {
 .inprogress_list input[type="checkbox"]:checked + span::after {
   content: "🎄";
   margin-left: 5px;
+}
+
+.inprogress_list li + input[type="checkbox"]:checked {
+  background-color: aqua;
 }
 
 .inprogress_list li:has(input[type="checkbox"]:checked) {
