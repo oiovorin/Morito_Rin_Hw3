@@ -89,16 +89,33 @@ input {
 }
 
 .inprogress_list li:nth-child(odd) {
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: rgba(251, 174, 174, 0.2);
 }
 
 .done_list li:nth-child(odd) {
   background-color: rgba(255, 232, 140, 0.2);
 }
 
-input[type="checkbox"]:checked + span::after {
+.inprogress_list input[type="checkbox"]:checked + span::after {
   content: "🎄";
   margin-left: 5px;
+}
+
+.done_list input[type="checkbox"]:checked + span::before {
+  content: "🎄";
+  margin-left: 5px;
+}
+
+.done_list input[type="checkbox"]:checked + span {
+  text-decoration: solid line-through;
+}
+
+.inprogress_list li:has(input[type="checkbox"]:checked) {
+  background-color: #787878;
+}
+
+.done_list li:has(input[type="checkbox"]:checked) {
+  background-color: #2c7a42;
 }
 
 .decorated-heading::after {
